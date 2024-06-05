@@ -1,54 +1,48 @@
 {
-  "heroes": [
-    {
-      "id": "1",
-      "name": "Первый герой",
-      "description": "Первый герой в рейтинге!",
-      "element": "fire"
-    },
-    {
-      "id": "de3b0c9e-2919-427c-813e-6d5d7d95f577",
-      "name": "sdsd",
-      "description": "sdsd",
-      "element": "wind"
-    },
-    {
-      "id": "a811959f-a902-48bf-9e7f-efdc6544ea32",
-      "name": "sdfsd",
-      "description": "sdfsd",
-      "element": "water"
-    }
-  ],
-  "filters": [
-    {
-      "name": "all",
-      "label": "Все",
-      "className": "btn-outline-dark",
-      "id": "9e04"
-    },
-    {
-      "name": "fire",
-      "label": "Огонь",
-      "className": "btn-danger",
-      "id": "5eef"
-    },
-    {
-      "name": "water",
-      "label": "Вода",
-      "className": "btn-primary",
-      "id": "837a"
-    },
-    {
-      "name": "wind",
-      "label": "Ветер",
-      "className": "btn-success",
-      "id": "940c"
-    },
-    {
-      "name": "earth",
-      "label": "Земля",
-      "className": "btn-secondary",
-      "id": "57e1"
-    }
-  ]
+	"heroes": [
+		{
+			"id": "e3212842-06c9-4f2f-bcc4-b76b172e72be",
+			"name": "dfsf",
+			"description": "sdfsdf",
+			"element": "wind"
+		},
+		{
+			"id": "831f3726-b0e3-486b-ba83-7a2e640b3a86",
+			"name": "sdfsdf",
+			"description": "sdfsd",
+			"element": "wind"
+		}
+	],
+	"filters": [
+		{
+			"id": "5",
+			"name": "all",
+			"label": "Все",
+			"className": "btn-outline-dark"
+		},
+		{
+			"id": "6",
+			"name": "fire",
+			"label": "Огонь",
+			"className": "btn-danger"
+		},
+		{
+			"id": "7",
+			"name": "water",
+			"label": "Вода",
+			"className": "btn-primary"
+		},
+		{
+			"id": "8",
+			"name": "wind",
+			"label": "Ветер",
+			"className": "btn-success"
+		},
+		{
+			"id": "9",
+			"name": "earth",
+			"label": "Земля",
+			"className": "btn-secondary"
+		}
+	]
 }
