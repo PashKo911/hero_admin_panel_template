@@ -8,9 +8,9 @@ const initialState = filtersAdapter.getInitialState({
 	activeFilter: 'all',
 })
 
-export const fetchFilters = createAsyncThunk('filters/fetchFilters', () => {
+export const fetchFilters = createAsyncThunk('filters/fetchFilters', async () => {
 	const { request } = useHttp()
-	return request('http://localhost:3001/filters')
+	return await request('http://localhost:3001/filters')
 })
 
 const filtersSlice = createSlice({
@@ -29,7 +29,6 @@ const filtersSlice = createSlice({
 			.addCase(fetchFilters.fulfilled, (state, action) => {
 				state.filtersLoadingStatus = 'idle'
 				filtersAdapter.setAll(state, action.payload)
-				state.filters = action.payload
 			})
 			.addCase(fetchFilters.rejected, (state) => {
 				state.filtersLoadingStatus = 'error'

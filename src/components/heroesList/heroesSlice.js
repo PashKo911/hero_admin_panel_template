@@ -7,9 +7,9 @@ const initialState = heroesAdapter.getInitialState({
 	heroesLoadingStatus: 'idle',
 })
 
-export const fetchHeroes = createAsyncThunk('heroes/fetchHeroes', () => {
+export const fetchHeroes = createAsyncThunk('heroes/fetchHeroes', async () => {
 	const { request } = useHttp()
-	return request('http://localhost:3001/heroes')
+	return await request('http://localhost:3001/heroes')
 })
 
 const heroesSlice = createSlice({
